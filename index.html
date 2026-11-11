@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,49 +6,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Un archivo personal de pensamientos, preguntas y observaciones.">
   <title>valefromtheweb — personal journal</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="page-shell">
+
     <header class="site-header">
-      <div class="topline"><span>INDEPENDENT DIGITAL JOURNAL</span><span>EST. 2026</span></div>
-      <a class="wordmark" href="#home" aria-label="valefromtheweb, inicio">valefromtheweb<span>.</span></a>
+      <div class="topline">
+        <span>INDEPENDENT DIGITAL JOURNAL</span>
+        <span>EST. 2026</span>
+      </div>
+
+      <a class="wordmark" href="#home" aria-label="valefromtheweb, inicio">
+        valefromtheweb<span>.</span>
+      </a>
+
       <p class="tagline">a collection of thoughts, questions & observations</p>
+
       <nav class="navigation" aria-label="Navegación principal">
-        <a href="#home">Inicio</a><a href="#archive">Archivo</a><a href="#about">Sobre mí</a>
-        <button class="text-button" id="themeToggle" type="button">Modo oscuro</button>
+        <a href="#home">Inicio</a>
+        <a href="#archive">Archivo</a>
+        <a href="#about">Sobre mí</a>
+        <button class="text-button" id="themeToggle" type="button">
+          Modo oscuro
+        </button>
       </nav>
     </header>
 
     <main id="home">
+
       <section class="welcome">
-        <div class="eyebrow-row"><span>WELCOME TO MY LITTLE CORNER OF THE INTERNET</span><span>001 — 2026</span></div>
+        <div class="eyebrow-row">
+          <span>WELCOME TO MY LITTLE CORNER OF THE INTERNET</span>
+          <span>001 — 2026</span>
+        </div>
+
         <p class="overline">UN ESPACIO PERSONAL DE IDEAS</p>
+
         <h1>Hola, mundo<span>.</span></h1>
-        <p class="intro">Un lugar para pensar en voz alta, cuestionar lo establecido y escribir sobre todo aquello que merece ser pensado.</p>
+
+        <p class="intro">
+          Un lugar para pensar en voz alta, cuestionar lo establecido
+          y escribir sobre todo aquello que merece ser pensado.
+        </p>
+
         <p class="signature">— Vale</p>
       </section>
 
       <section class="featured-section" aria-labelledby="featuredTitle">
-        <div class="feature-art" aria-hidden="true"><span>IDEAS<br>IN<br>PROGRESS</span><b>?</b><i>VOL. 01</i></div>
+
+        <div class="feature-art" aria-hidden="true">
+          <span>IDEAS<br>IN<br>PROGRESS</span>
+          <b>?</b>
+          <i>VOL. 01</i>
+        </div>
+
         <div class="feature-copy">
           <p class="category">ENTRADA DESTACADA · FILOSOFÍA</p>
-          <h2 id="featuredTitle">¿Y si todo lo personal fuera político?</h2>
-          <p>Una reflexión sobre la manera en que nuestras experiencias individuales están atravesadas por estructuras sociales, culturales y políticas.</p>
-          <button class="underlined-button" id="readFeatured" type="button">Leer entrada <span>↗</span></button>
+
+          <h2 id="featuredTitle">
+            ¿Y si todo lo personal fuera político?
+          </h2>
+
+          <p>
+            Una reflexión sobre la manera en que nuestras experiencias
+            individuales están atravesadas por estructuras sociales,
+            culturales y políticas.
+          </p>
+
+          <button class="underlined-button" id="readFeatured" type="button">
+            Leer entrada <span>↗</span>
+          </button>
         </div>
+
       </section>
 
       <section class="archive-section" id="archive">
+
         <div class="section-title">
-          <div><p class="category">THE PERSONAL ARCHIVE</p><h2>El archivo</h2></div>
-          <span class="archive-note">TEXTOS, IDEAS Y OTRAS CURIOSIDADES</span>
+          <div>
+            <p class="category">THE PERSONAL ARCHIVE</p>
+            <h2>El archivo</h2>
+          </div>
+
+          <span class="archive-note">
+            TEXTOS, IDEAS Y OTRAS CURIOSIDADES
+          </span>
         </div>
+
         <div class="toolbar">
-          <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar en el archivo..." aria-label="Buscar entradas"></label>
+
+          <label class="search-wrap">
+            <span aria-hidden="true">⌕</span>
+
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Buscar en el archivo..."
+              aria-label="Buscar entradas"
+            >
+          </label>
+
           <div class="filters" id="filters">
             <button class="filter active" data-category="Todas">Todas</button>
             <button class="filter" data-category="Filosofía">Filosofía</button>
@@ -56,55 +122,99 @@
             <button class="filter" data-category="Literatura">Literatura</button>
             <button class="filter" data-category="Personal">Personal</button>
           </div>
+
         </div>
+
         <div class="article-list" id="articleList" aria-live="polite"></div>
-        <p class="empty-state" id="emptyState" hidden>No hay entradas que coincidan. Prueba otra búsqueda.</p>
+
+        <p class="empty-state" id="emptyState" hidden>
+          No hay entradas que coincidan. Prueba otra búsqueda.
+        </p>
+
       </section>
 
       <section class="about-section" id="about">
+
         <div class="about-photo-wrap">
-          <img class="about-photo" src="foto-vale-bn.jpg" alt="Retrato de Vale en blanco y negro">
+          <img
+            class="about-photo"
+            src="foto-vale-bn.jpg"
+            alt="Retrato de Vale en blanco y negro"
+          >
         </div>
+
         <div class="about-content">
           <p class="category">A LITTLE ABOUT ME</p>
+
           <h2>Hola, soy Vale.</h2>
-          <p>Tengo 21 años, estudio Derecho y tengo una curiosidad casi obsesiva por entender el mundo y cuestionar aquello que solemos dar por sentado.</p>
-          <p>Me interesan la filosofía, la sociología, la política, el feminismo, la literatura y las contradicciones de la condición humana.</p>
-          <p>Entre Dostoyevski, las poetas latinoamericanas y las preguntas que probablemente nunca resolveré, nace este pequeño rincón de internet.</p>
-          <p>No pretendo tener todas las respuestas. Solo quiero pensar, escribir, cuestionar y, de vez en cuando, cambiar de opinión.</p>
-          <p class="about-ending">Everything is worth questioning.</p>
+
+          <p>
+            Tengo 21 años, estudio Derecho y tengo una curiosidad casi
+            obsesiva por entender el mundo y cuestionar aquello que
+            solemos dar por sentado.
+          </p>
+
+          <p>
+            Me interesan la filosofía, la sociología, la política,
+            el feminismo, la literatura y las contradicciones de la
+            condición humana.
+          </p>
+
+          <p>
+            Entre Dostoyevski, las poetas latinoamericanas y las
+            preguntas que probablemente nunca resolveré, nace este
+            pequeño rincón de internet.
+          </p>
+
+          <p>
+            No pretendo tener todas las respuestas. Solo quiero pensar,
+            escribir, cuestionar y, de vez en cuando, cambiar de opinión.
+          </p>
+
+          <p class="about-ending">
+            Everything is worth questioning.
+          </p>
         </div>
+
       </section>
+
     </main>
 
     <footer class="site-footer">
       <a class="footer-wordmark" href="#home">valefromtheweb.</a>
-      <div class="footer-bottom"><span>MADE WITH THOUGHTS & CURIOSITY.</span><span>© <span id="year"></span> VALE</span></div>
+
+      <div class="footer-bottom">
+        <span>MADE WITH THOUGHTS & CURIOSITY.</span>
+        <span>© <span id="year"></span> VALE</span>
+      </div>
     </footer>
+
   </div>
 
-  <button class="write-button" id="openEditor" type="button">＋ <span>Escribir entrada</span></button>
-
+  <!-- Lector de publicaciones -->
   <dialog class="reader-dialog" id="readerDialog">
-    <button class="dialog-close" data-close="readerDialog" aria-label="Cerrar">×</button>
-    <p class="category" id="readerMeta"></p><h2 id="readerTitle"></h2><div class="reader-body" id="readerBody"></div>
+
+    <button
+      class="dialog-close"
+      data-close="readerDialog"
+      aria-label="Cerrar"
+      type="button"
+    >×</button>
+
+    <p class="category" id="readerMeta"></p>
+
+    <h2 id="readerTitle"></h2>
+
+    <div class="reader-body" id="readerBody"></div>
+
   </dialog>
 
-  <dialog class="editor-dialog" id="editorDialog">
-    <form id="entryForm">
-      <div class="editor-heading"><p class="category">PERSONAL ARCHIVE / NUEVA ENTRADA</p><button class="dialog-close" type="button" data-close="editorDialog" aria-label="Cerrar">×</button></div>
-      <label>Título<input id="entryTitle" required maxlength="100" placeholder="¿Qué tienes en mente?"></label>
-      <div class="form-row">
-        <label>Categoría<select id="entryCategory"><option>Filosofía</option><option>Sociedad</option><option>Derecho</option><option>Literatura</option><option>Personal</option></select></label>
-        <label>Fecha<input id="entryDate" type="date" required></label>
-      </div>
-      <label>Tu texto<textarea id="entryContent" required rows="10" placeholder="Empieza a escribir..."></textarea></label>
-      <p class="editor-note">Por ahora, las entradas se guardan en este navegador mediante almacenamiento local. No se publican en internet automáticamente.</p>
-      <button class="submit-button" type="submit">Guardar en mi archivo ↗</button>
-    </form>
-  </dialog>
+  <!-- Librerías para interpretar y sanitizar Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
 
   <script src="customizer.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
