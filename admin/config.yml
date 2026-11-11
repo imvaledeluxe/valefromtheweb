@@ -1,0 +1,21 @@
+backend:
+  name: turbo-github
+  turbo_site_id: 49de8394-0b9f-4cfd-91f5-e8f6325cb9b4
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "entradas"
+    label: "Entradas"
+    folder: "content/entradas"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Categoría", name: "category", widget: "string" }
+      - { label: "Imagen", name: "image", widget: "image", required: false }
+      - { label: "Contenido", name: "body", widget: "markdown" }
